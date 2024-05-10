@@ -4,14 +4,15 @@ import { Container, Row, Col, Form, ListGroup } from 'reactstrap'
 import { useParams } from 'react-router-dom'
 import tourData from "../assets/data/tours"
 import calculateAvgRating from '../utils/avgRating'
- import avatar from "../assets/images/avatar.jpg"
-
+import avatar from "../assets/images/avatar.jpg"
+import Booking from '../components/Booking/Booking'
+import Newsletter from "../shared/Newsletter"
 
 const TourDetails = () => {
 
   const { id } = useParams();
-const reviewMsgRef = useRef('')
-const {tourRating, setTourRating } = useState(null)
+  const reviewMsgRef = useRef('')
+  const {tourRating, setTourRating } = useState(null)
   // this is an static data later we will call our API and load our data from database
   const tour = tourData.find(tour => tour.id === id)
 
@@ -26,8 +27,7 @@ const {tourRating, setTourRating } = useState(null)
   // submit request to the server
   const submitHandler = e=> {
     e.preventDefault();
-    const reviewText = reviewMsgRef.current.value
-    alert(`${reviewText}, ${tourRating}`)
+    const reviewText = reviewMsgRef.current.value;
 
     //later will call api
   }
@@ -47,7 +47,7 @@ const {tourRating, setTourRating } = useState(null)
               <span className="tour__rating d-flex align-items-center gap-1">
                     <i class="ri-star-fill" style={{color: "var(--secondary-color)"}}>
                       </i> 
-                      {calculateAvgRating === 0 ? null : avgRating}
+                      {avgRating === 0 ? null : avgRating}
                     {totalRating === 0 ? ("Not rated") :
                         (<span>({reviews?.length})</span>)
                     }
@@ -143,9 +143,14 @@ const {tourRating, setTourRating } = useState(null)
             </div>  
           </div>
           </Col>
+
+          <Col lg='4'>
+              <Booking tour={tour} avgRating={avgRating} />
+          </Col>
         </Row>
       </Container>
     </section>
+    <Newsletter />
     </>
   )
 }

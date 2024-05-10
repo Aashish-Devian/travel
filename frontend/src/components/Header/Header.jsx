@@ -10,7 +10,7 @@ const navLinks = [
     display: 'Home',
   },
   {
-    path: '/about', // Changed '#' to a valid path
+    path: '/about',
     display: 'About',
   },
   {
@@ -68,16 +68,17 @@ const Header = () => {
               <div className="nav__right d-flex align-items-center gap-4">
                 <div className="nav__btns d-flex align-items-center gap-4">
                   <Button className="btn secondary__btn">
-                    <Link  to='/login'>Login</Link>
+                    <Link  to="/login">Login</Link>
                   </Button>
                   <Button className="btn primary__btn">
-                    <Link  to='/register'>Register</Link>
+                    <Link  to="/register">Register</Link>
                   </Button>
                 </div>
 
                 <span className="mobile__menu">
                 <i class="ri-menu-fold-line"></i>
                 </span>
+
               </div>
 
             </div>
@@ -89,3 +90,16 @@ const Header = () => {
 };
 
 export default Header;
+
+{/* <div className="nav__right d-flex align-items-center gap-4">
+                <div className="nav__btns d-flex align-items-center gap-4">
+                  <Link to="/login"> {/* Move Link outside of Button */}
+                //     <Button className="btn secondary__btn">Login</Button>
+                //   </Link>
+                //   <Link to="/register"> {/* Move Link outside of Button */}
+                //     <Button className="btn primary__btn">Register</Button>
+                //   </Link>
+                // </div>
+                // <span className="mobile__menu">
+                //   <i className="ri-menu-fold-line"></i> {/* Fix className attribute */}
+                // </span> */}
