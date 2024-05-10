@@ -1,7 +1,7 @@
 
 import React from 'react'
-import serviceCard from "./serviceCard"
-import { Col } from 'reactstrap'
+import ServiceCard from "./serviceCard"
+import { Row, Col } from 'reactstrap'
 
 import weatherImg from "../assets/images/weather.png"
 import guideImg from "../assets/images/guide.png"
@@ -26,15 +26,15 @@ const servicesData = [
 ]
 
 const serviceList = () => {
-  return 
+  return (
     <>
-    {servicesData.map((item, index) => (
+      {servicesData.map((item, index) => (
         <Col lg="3" key={index}>
-        <serviceCard item={item} />
+          <ServiceCard item={item} />
         </Col>
-    ))}
+      ))}
     </>
-  
+  )
 }
 
 export default serviceList
