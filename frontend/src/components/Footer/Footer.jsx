@@ -126,7 +126,7 @@ const Footer = () => {
               <ListGroupItem className="ps-0 border-0 d-flex align-items-center gap-3">
                <h6 className='mb-0 d-flex align-items-center gap-2'>
                 <span>
-                  <i class="ri-phone-fille"></i>
+                <i class="ri-phone-line"></i>
                   Phone: 
                 </span>
                </h6>

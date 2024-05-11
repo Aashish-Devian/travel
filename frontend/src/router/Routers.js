@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom'; // Make sure to import BrowserRouter as Router
-
+import Header from "../components/Header/Header"
 import Home from './../Pages/Home';
 import Tours from './../Pages/Tours';
 import TourDetails from './../Pages/TourDetails';
@@ -12,6 +12,7 @@ import ThankYou from '../Pages/ThankYou';
 const Routers = () => {
   return (
     <Router> {/* Wrap your Routes in a Router component */}
+    <Header />
       <Routes>
           <Route path='/' element={<Navigate to='/home' />} />
           <Route path='/home' element={<Home />} />
