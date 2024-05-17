@@ -11,8 +11,8 @@ import { BASE_URL } from "../utils/config";
 const Login = () => {
 
   const [credentials, setCredentials] = useState({
-    email:undefined,
-    password:undefined
+    email:null,
+    password:null
 });
 
 const { dispatch } = useContext(AuthContext);
@@ -35,14 +35,14 @@ const handleClick = async e => {
       },
       credentials: "include",
       body: JSON.stringify(credentials),
-    });
+    })
 
     const result = await res.json();
     if (!res.ok) alert(result.message);
     console.log(result.data);
 
     dispatch({ type: "LOGIN_SUCCESS", payload: result.data });
-    navigate("/");
+    navigate('/');
   } catch (err) {
     dispatch({ type: "LOGIN_FAILURE", payload: err.message });
   }
@@ -73,7 +73,7 @@ const handleClick = async e => {
                     <input type="password" placeholder='Password' required id='password' onChange={handleChange} />
                   </FormGroup>
 
-                    <Button className="btn secondary__btn auth__btn" type="submit">Login</Button>
+                    <Button className="btn secondary__btn auth__btn" type="submit" >Login</Button>
                   
                 </Form>
                 <p>Don't have an account? <Link to='/register'>Create</Link></p>
