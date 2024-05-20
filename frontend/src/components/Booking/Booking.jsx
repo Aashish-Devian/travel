@@ -7,7 +7,13 @@ import { AuthContext } from "../../context/AuthContext";
 import { BASE_URL } from "../../utils/config";
 
 const Booking = ({ tours, avgRating }) => {
-  const { price, reviews, title } = tours;
+  let { price, reviews, title } = tours || {};
+  // Initialize variables if tours is undefined
+  // price = price || 99; // Default price to 0 if undefined
+  // reviews = reviews || []; // Default reviews to empty array if undefined
+  // title = title || ""; // Default title to empty string if undefined
+
+
   const navigate = useNavigate();
 
   const { user } = useContext(AuthContext);

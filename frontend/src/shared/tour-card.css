@@ -74,7 +74,7 @@
 }
 
 .booking__btn{
-    background: var(--secondary-color) !important;
+    background: var(--primary-color) !important;
     cursor: pointer;
     padding: 0.2rem 0.5rem !important; 
 }
@@ -86,7 +86,7 @@
 }
 
 .booking__btn a:hover{
-    color: #fff;
+    color: #FFFF45;
 }
 
 @media only screen and (max-width:992px) {

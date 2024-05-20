@@ -14,7 +14,6 @@ const useFetch = (url) => {
 
         if (!res.ok) {
           setError("Failed to fetch");
-          alert("failed to fetch");
         //   return; // Return early if response is not okay
         }
 

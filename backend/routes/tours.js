@@ -14,22 +14,22 @@ import { verifyAdmin } from "../utils/verifyToken.js";
 
 const router = express.Router();
 
-//Create new tour
+// //Create new tour
 router.post("/", verifyAdmin, createTour);
 
-//Update tour
+// //Update tour
 router.put("/:id", verifyAdmin, updateTour);
 
-//Delete tour
+// //Delete tour
 router.delete("/:id", verifyAdmin, deleteTour);
 
-//Get single tour
+// //Get single tour
 router.get("/:id", getSingleTour);
 
-//Get all tour
+// //Get all tour
 router.get("/", getAllTour);
 
-//Get tour by search
+// //Get tour by search
 router.get("/search/getTourBySearch", getTourBySearch);
 router.get("/search/getFeaturedTour", getFeaturedTour);
 router.get("/search/getTourCount", getTourCount);

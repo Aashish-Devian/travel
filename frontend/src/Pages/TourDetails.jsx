@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect, useContext } from "react";
 import "../style/tour-details.css";
-// import tourData from '../assets/data/tours'
+import tourData from '../assets/data/tours'
 import { Container, Row, Col, Form, ListGroup } from "reactstrap";
 import { useParams } from "react-router-dom";
 import calculateAvgRating from "../utils/avgRating";
@@ -17,6 +17,7 @@ const TourDetails = () => {
   const [tourRating, setTourRating] = useState(null);
   const { user } = useContext(AuthContext);
 
+  // const tour = tourData.find(tour=> tour.id === id)
   // fetch data from database
   const { data: tour, loading, error } = useFetch(`${BASE_URL}/tours/${id}`);
 
@@ -92,8 +93,8 @@ const TourDetails = () => {
                         className="ri-star-fill"
                         style={{ color: "var(--secondary-color)" }}
                       ></i>{" "}
-                      {avgRating === 0 ? null : avgRating}
-                      {avgRating === 0 ? (
+                      {calculateAvgRating === 0 ? null : avgRating}
+                      {totalRating === 0 ? (
                         "Not rated"
                       ) : (
                         <span>({reviews?.length})</span>

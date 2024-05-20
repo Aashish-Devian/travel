@@ -3,7 +3,7 @@ import "./footer.css"
 
 import { Container, Row, Col, ListGroup, ListGroupItem } from 'reactstrap'
 
-import { Link, BrowserRouter as Router } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import logo from "../../assets/images/logo.png"
 
 const quick__links = [
@@ -41,7 +41,6 @@ const Footer = () => {
   const year = new Date().getFullYear();
 
   return (
-    <Router>
     <footer className="footer">
       <Container>
         <Row>
@@ -145,7 +144,6 @@ const Footer = () => {
         </Row>
       </Container>
     </footer>
-    </Router>
   )
 }
 

@@ -1,17 +1,10 @@
-
-//for testing
-// app.get('/', (req,res) =>{
-//     res.send("API is working");
-// });
-
 import express from "express";
 import dotenv from "dotenv";
+import cors from 'cors'
+import cookieParser from "cookie-parser";
 import connectDB from "./db/connectDB.js";
 
-import cors from "cors";
-import cookieParser from "cookie-parser";
-
-import tourRoute from "./routes/tours.js";
+import tourRoute from './routes/tours.js'
 import userRoute from "./routes/users.js";
 import authRoute from "./routes/auth.js";
 import reviewRoute from "./routes/reviews.js";
@@ -27,7 +20,12 @@ const corsOptions = {
   credentials: true
 }
 
-// middlewares
+// //for testing
+// app.get('/', (req,res) =>{
+//     res.send("API is working");
+// });
+
+// // middlewares
 app.use(express.json());
 app.use(cors(corsOptions));
 app.use(cookieParser());
@@ -39,5 +37,7 @@ app.use("/api/v1/review", reviewRoute);
 app.use("/api/v1/booking", bookingRoute);
 
 app.listen(port, () => {
+// connectDB();
+
   console.log("server start at http://localhost:", port);
 });

@@ -28,7 +28,7 @@ export const register = async (req, res) => {
 
 // user login
 export const login = async (req, res) => {
-    // const email = req.body.email;
+   
   try {
     const email = req.body.email;
     const user = await User.findOne({ email });
@@ -70,6 +70,8 @@ export const login = async (req, res) => {
       })
       .status(200)
       .json({ 
+        // success: true,
+        // message: "successfully login",
         token, 
         data: { ...rest }, 
         role 

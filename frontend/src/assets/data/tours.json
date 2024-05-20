@@ -4,7 +4,7 @@
     "city": "London",
     "address": "Somewhere in London",
     "distance": 300,
-    "price": 99,
+    "price": 999,
     "maxGroupSize": 10,
     "desc": "this is the description",
     "reviews": [],
@@ -17,7 +17,7 @@
     "city": "Bali",
     "address": "Somewhere in Indonesia",
     "distance": 400,
-    "price": 99,
+    "price": 199,
     "maxGroupSize": 8,
     "desc": "this is the description",
     "reviews": [],
@@ -91,7 +91,7 @@
     "featured": true
   },
   {
-    "title": "Snowy Mountains, Thailand",
+    "title": "Beautiful Snowy Mountains",
     "city": "Bangkok",
     "address": "Somewhere in Thailand",
     "distance": 500,

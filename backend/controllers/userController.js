@@ -17,7 +17,7 @@ export const createUser = async (req, res) => {
   } catch (error) {
     res
       .status(500)
-      .json({ success: true, message: "Failed to create. Try again!" });
+      .json({ success: false, message: "Failed to create. Try again!" });
   }
 };
 
