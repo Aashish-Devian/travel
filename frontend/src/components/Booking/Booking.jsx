@@ -6,8 +6,8 @@ import { useNavigate } from "react-router-dom";
 import { AuthContext } from "../../context/AuthContext";
 import { BASE_URL } from "../../utils/config";
 
-const Booking = ({ tours, avgRating }) => {
-  let { price, reviews, title } = tours || {};
+const Booking = ({ tour, avgRating }) => {
+  let { price, reviews, title } = tour || {};
   // Initialize variables if tours is undefined
   // price = price || 99; // Default price to 0 if undefined
   // reviews = reviews || []; // Default reviews to empty array if undefined
