@@ -25,6 +25,27 @@ const tours = [
     avgRating: 4.5,
     photo: tourImg01,
     featured: true,
+    overview: ["Overview point 1", "Overview point 2"],
+    include: ["Item 1", "Item 2"],
+    itinerary: [ {
+      "day": "Day 1",
+      "description": "<ul><li>Activity 1</li></ul>"
+    },
+    {
+      "day": "Day 2",
+      "description": "<ul><li>Activity 2</li></ul>"
+    },
+    {
+      "day": "Day 3",
+      "description": "<ul><li>Activity 3</li></ul>"
+    }],
+    equipment: ["Equipment 1", "Equipment 2"],
+    tripMap: "https://maps.google.com/your-trip-map",
+    video: "https://www.youtube.com/your-video",
+    faqs: [
+      {question: "FAQ question 1", answer: "FAQ answer 1"},
+      {question: "FAQ question 2", answer: "FAQ answer 2"}
+    ]
   },
   {
     id: "02",
@@ -44,6 +65,16 @@ const tours = [
     avgRating: 4.5,
     photo: tourImg02,
     featured: true,
+    overview: ["Overview point 1", "Overview point 2"],
+    include: ["Item 1", "Item 2"],
+    itinerary: ["Day 1: Activity 1", "Day 2: Activity 2"],
+    equipment: ["Equipment 1", "Equipment 2"],
+    tripMap: "https://maps.google.com/your-trip-map",
+    video: "https://www.youtube.com/your-video",
+    faqs: [
+      {question: "FAQ question 1", answer: "FAQ answer 1"},
+      {question: "FAQ question 2", answer: "FAQ answer 2"}
+    ]
   },
   {
     id: "03",
@@ -63,6 +94,16 @@ const tours = [
     avgRating: 4.5,
     photo: tourImg03,
     featured: true,
+    overview: ["Overview point 1", "Overview point 2"],
+    include: ["Item 1", "Item 2"],
+    itinerary: ["Day 1: Activity 1", "Day 2: Activity 2"],
+    equipment: ["Equipment 1", "Equipment 2"],
+    tripMap: "https://maps.google.com/your-trip-map",
+    video: "https://www.youtube.com/your-video",
+    faqs: [
+      {question: "FAQ question 1", answer: "FAQ answer 1"},
+      {question: "FAQ question 2", answer: "FAQ answer 2"}
+    ]
   },
   {
     id: "04",
@@ -82,6 +123,16 @@ const tours = [
     avgRating: 4.5,
     photo: tourImg04,
     featured: true,
+    overview: ["Overview point 1", "Overview point 2"],
+    include: ["Item 1", "Item 2"],
+    itinerary: ["Day 1: Activity 1", "Day 2: Activity 2"],
+    equipment: ["Equipment 1", "Equipment 2"],
+    tripMap: "https://maps.google.com/your-trip-map",
+    video: "https://www.youtube.com/your-video",
+    faqs: [
+      {question: "FAQ question 1", answer: "FAQ answer 1"},
+      {question: "FAQ question 2", answer: "FAQ answer 2"}
+    ]
   },
   {
     id: "05",
@@ -101,6 +152,16 @@ const tours = [
     avgRating: 4.5,
     photo: tourImg05,
     featured: false,
+    overview: ["Overview point 1", "Overview point 2"],
+    include: ["Item 1", "Item 2"],
+    itinerary: ["Day 1: Activity 1", "Day 2: Activity 2"],
+    equipment: ["Equipment 1", "Equipment 2"],
+    tripMap: "https://maps.google.com/your-trip-map",
+    video: "https://www.youtube.com/your-video",
+    faqs: [
+      {question: "FAQ question 1", answer: "FAQ answer 1"},
+      {question: "FAQ question 2", answer: "FAQ answer 2"}
+    ]
   },
   {
     id: "06",
@@ -138,6 +199,16 @@ const tours = [
     avgRating: 4.5,
     photo: tourImg07,
     featured: false,
+    overview: ["Overview point 1", "Overview point 2"],
+    include: ["Item 1", "Item 2"],
+    itinerary: ["Day 1: Activity 1", "Day 2: Activity 2"],
+    equipment: ["Equipment 1", "Equipment 2"],
+    tripMap: "https://maps.google.com/your-trip-map",
+    video: "https://www.youtube.com/your-video",
+    faqs: [
+      {question: "FAQ question 1", answer: "FAQ answer 1"},
+      {question: "FAQ question 2", answer: "FAQ answer 2"}
+    ]
   },
   {
     id: "08",
@@ -152,6 +223,16 @@ const tours = [
     avgRating: 4.5,
     photo: tourImg03,
     featured: false,
+    overview: ["Overview point 1", "Overview point 2"],
+    include: ["Item 1", "Item 2"],
+    itinerary: ["Day 1: Activity 1", "Day 2: Activity 2"],
+    equipment: ["Equipment 1", "Equipment 2"],
+    tripMap: "https://maps.google.com/your-trip-map",
+    video: "https://www.youtube.com/your-video",
+    faqs: [
+      {question: "FAQ question 1", answer: "FAQ answer 1"},
+      {question: "FAQ question 2", answer: "FAQ answer 2"}
+    ]
   },
 ];
 

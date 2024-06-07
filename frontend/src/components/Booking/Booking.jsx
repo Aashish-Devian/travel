@@ -8,11 +8,6 @@ import { BASE_URL } from "../../utils/config";
 
 const Booking = ({ tour, avgRating }) => {
   let { price, reviews, title } = tour || {};
-  // Initialize variables if tours is undefined
-  // price = price || 99; // Default price to 0 if undefined
-  // reviews = reviews || []; // Default reviews to empty array if undefined
-  // title = title || ""; // Default title to empty string if undefined
-
 
   const navigate = useNavigate();
 
@@ -24,6 +19,7 @@ const Booking = ({ tour, avgRating }) => {
     tourName: title,
     fullName: "",
     phone: "",
+    email: "", // New email field for booking form
     guestSize: 1,
     bookAt: "",
   });
@@ -66,68 +62,100 @@ const Booking = ({ tour, avgRating }) => {
 
   return (
     <div className="booking">
-        <div className="booking__top d-flex align-items-center justify-content-between">
-            <h3>${price} 
-            <span>/per person</span>
-            </h3>
-            <span className="tour__rating d-flex align-items-center">
-                    <i class="ri-star-fill" ></i> 
-                      {avgRating === 0 ? null : avgRating} ({reviews?.length})
-                </span>
-        </div>
+      <div className="booking__top d-flex align-items-center justify-content-between">
+        <h3>
+          ${price}
+          <span>/per person</span>
+        </h3>
+        <span className="tour__rating d-flex align-items-center">
+          <i className="ri-star-fill"></i>{" "}
+          {avgRating === 0 ? null : avgRating}{" "}
+          ({reviews?.length})
+        </span>
+      </div>
 
-        {/* ===============booking form start============== */}
-        <div className="booking__form">
-            <h5>Information</h5>
-            <Form className="booking__info-form" onSubmit={handleClick}>
-                <FormGroup>
-                    <input type="text" placeholder='Full Name' id='fullName'
-                    required onChange={handleChange} />
-                </FormGroup>
-                <FormGroup>
-                    <input type="number" placeholder='Phone' id='phone'
-                    required onChange={handleChange} />
-                </FormGroup>
-                <FormGroup className="d-flex align-items-center gap-3">
-                    <input type="date" placeholder='' id='bookAt'
-                    required onChange={handleChange} />
-                    <input type="number" placeholder='Guest' id='guestSize'
-                    required onChange={handleChange} />
-                </FormGroup>
-            </Form>
-        </div>
-        {/* ===============booking form end============== */}
+      {/* ===============booking form start============== */}
+      <div className="booking__form">
+        <h5>Information</h5>
+        <Form className="booking__info-form" onSubmit={handleClick}>
+          <FormGroup>
+            <input
+              type="text"
+              placeholder="Full Name"
+              id="fullName"
+              required
+              onChange={handleChange}
+            />
+          </FormGroup>
+          <FormGroup>
+            <input
+              type="number"
+              placeholder="Phone"
+              id="phone"
+              required
+              onChange={handleChange}
+            />
+          </FormGroup>
+          <FormGroup>
+            <input
+              type="email"
+              placeholder="Email"
+              id="email"
+              required
+              onChange={handleChange}
+            />
+          </FormGroup>
+          <FormGroup className="d-flex align-items-center gap-3">
+            <input
+              type="date"
+              placeholder=""
+              id="bookAt"
+              required
+              onChange={handleChange}
+            />
+            <input
+              type="number"
+              placeholder="Guest"
+              id="guestSize"
+              required
+              onChange={handleChange}
+            />
+          </FormGroup>
+        </Form>
+      </div>
+      {/* ===============booking form end============== */}
 
-        {/* ===============booking-bottom start============== */}
-        <div className="booking__bottom">
-            <ListGroup>
-                <ListGroupItem className="border-0 px-0">
-                    <h5 className='d-flex align-items-center gap-1'>
-                        ${price} <i className="ri-close-line"></i> 
-                        1 person 
-                    </h5>
-                    <span> ${price} </span>
-                </ListGroupItem>
+      {/* ===============booking-bottom start============== */}
+      <div className="booking__bottom">
+        <ListGroup>
+          <ListGroupItem className="border-0 px-0">
+            <h5 className="d-flex align-items-center gap-1">
+              ${price} <i className="ri-close-line"></i> 1 person
+            </h5>
+            <span> ${price} </span>
+          </ListGroupItem>
 
-                <ListGroupItem className="border-0 px-0">
-                    <h5> Service charge </h5>
-                    <span> ${serviceFee} </span>
-                </ListGroupItem>
+          <ListGroupItem className="border-0 px-0">
+            <h5> Service charge </h5>
+            <span> ${serviceFee} </span>
+          </ListGroupItem>
 
-                <ListGroupItem className="border-0 px-0 total">
-                    <h5> Total </h5>
-                    <span> ${totalAmount} </span>
-                </ListGroupItem>
-            </ListGroup>
+          <ListGroupItem className="border-0 px-0 total">
+            <h5> Total </h5>
+            <span> ${totalAmount} </span>
+          </ListGroupItem>
+        </ListGroup>
 
-            <Button className="btn primary__btn w-100 mt-4" onClick={handleClick}>
-                Book Now
-            </Button>
-        </div>
-        {/* ===============booking-bottom end============== */}
-
+        <Button
+          className="btn primary__btn w-100 mt-4"
+          onClick={handleClick}
+        >
+          Book Now
+        </Button>
+      </div>
+      {/* ===============booking-bottom end============== */}
     </div>
-  )
-}
+  );
+};
 
-export default Booking
+export default Booking;

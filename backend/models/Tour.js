@@ -35,18 +35,66 @@ const tourSchema = new mongoose.Schema(
       type: Number,
       required: true,
     },
-
     reviews: [
       {
         type: mongoose.Types.ObjectId,
         ref: "Review",
       },
     ],
-
     featured: {
       type: Boolean,
       default: false,
     },
+    overview: [
+      {
+        type: String,
+        required: true,
+      },
+    ],
+    include: [
+      {
+        type: String,
+        required: true,
+      },
+    ],
+    itinerary: [
+      {
+        day: {
+          type: String,
+          required: true,
+        },
+        description: {
+          type: String,
+          required: true,
+        },
+      },
+    ],
+    equipment: [
+      {
+        type: String,
+        required: true,
+      },
+    ],
+    tripMap: {
+      type: String,
+      required: true,
+    },
+    video: {
+      type: String,
+      required: true,
+    },
+    faqs: [
+      {
+        question: {
+          type: String,
+          required: true,
+        },
+        answer: {
+          type: String,
+          required: true,
+        },
+      },
+    ],
   },
   { timestamps: true }
 );

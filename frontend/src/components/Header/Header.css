@@ -47,6 +47,41 @@
     z-index: 999;
 }
 
+.dropdown {
+    position: relative;
+  }
+  
+  .dropdown__menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    display: none;
+  }
+  
+  .dropdown:hover.dropdown__menu {
+    display: block;
+  }
+  
+  .dropdown__menu li {
+    margin-bottom: 10px;
+  }
+  
+  .dropdown__menu li:last-child {
+    margin-bottom: 0;
+  }
+  
+  .dropdown__menu a {
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .dropdown__menu a:hover {
+    color: #666;
+  }
+
 /* =================responsive code============== */
 @media only screen and (max-width:992px) {
     .logo img{

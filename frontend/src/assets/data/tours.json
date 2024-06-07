@@ -10,7 +10,17 @@
     "reviews": [],
 
     "photo": "/tour-images/tour-img01.jpg",
-    "featured": true
+    "featured": true,
+    "overview": ["<strong>Overview point 1</strong>", "Overview point 2"],
+    "include": ["<ul><li>Item 1</li><li>Item 2</li></ul>"],
+    "itinerary": ["<ul><li>Day 1: Activity 1</li><li>Day 2: Activity 2</li></ul>"],
+    "equipment": ["<ul><li>Equipment 1</li><li>Equipment 2</li></ul>"],
+    "tripMap": "https://maps.google.com/your-trip-map",
+    "video": "https://www.youtube.com/your-video",
+    "faqs": [
+      {"question": "FAQ question 1", "answer": "<strong>FAQ answer 1</strong>"},
+      {"question": "FAQ question 2", "answer": "FAQ answer 2"}
+    ]
   },
   {
     "title": "Bali, Indonesia",
@@ -23,7 +33,17 @@
     "reviews": [],
 
     "photo": "/tour-images/tour-img02.jpg",
-    "featured": true
+    "featured": true,
+    "overview": ["<strong>Overview point 1</strong>", "Overview point 2"],
+    "include": ["<ul><li>Item 1</li><li>Item 2</li></ul>"],
+    "itinerary": ["<ul><li>Day 1: Activity 1</li><li>Day 2: Activity 2</li></ul>"],
+    "equipment": ["<ul><li>Equipment 1</li><li>Equipment 2</li></ul>"],
+    "tripMap": "https://maps.google.com/your-trip-map",
+    "video": "https://www.youtube.com/your-video",
+    "faqs": [
+      {"question": "FAQ question 1", "answer": "<strong>FAQ answer 1</strong>"},
+      {"question": "FAQ question 2", "answer": "FAQ answer 2"}
+    ]
   },
   {
     "title": "Snowy Mountains, Thailand",
@@ -36,7 +56,17 @@
     "reviews": [],
 
     "photo": "/tour-images/tour-img03.jpg",
-    "featured": true
+    "featured": true,
+    "overview": ["Overview point 1", "Overview point 2"],
+    "include": ["Item 1", "Item 2"],
+    "itinerary": ["Day 1: Activity 1", "Day 2: Activity 2"],
+    "equipment": ["Equipment 1", "Equipment 2"],
+    "tripMap": "https://maps.google.com/your-trip-map",
+    "video": "https://www.youtube.com/your-video",
+    "faqs": [
+      {"question": "FAQ question 1", "answer": "FAQ answer 1"},
+      {"question": "FAQ question 2", "answer": "FAQ answer 2"}
+    ]
   },
   {
     "title": "Beautiful Sunrise, Thailand",
@@ -49,7 +79,17 @@
     "reviews": [],
 
     "photo": "/tour-images/tour-img04.jpg",
-    "featured": true
+    "featured": true,
+    "overview": ["Overview point 1", "Overview point 2"],
+    "include": ["Item 1", "Item 2"],
+    "itinerary": ["Day 1: Activity 1", "Day 2: Activity 2"],
+    "equipment": ["Equipment 1", "Equipment 2"],
+    "tripMap": "https://maps.google.com/your-trip-map",
+    "video": "https://www.youtube.com/your-video",
+    "faqs": [
+      {"question": "FAQ question 1", "answer": "FAQ answer 1"},
+      {"question": "FAQ question 2", "answer": "FAQ answer 2"}
+    ]
   },
   {
     "title": "Nusa Pendia Bali, Indonesia",
@@ -62,7 +102,17 @@
     "reviews": [],
 
     "photo": "/tour-images/tour-img05.jpg",
-    "featured": true
+    "featured": true,
+    "overview": ["Overview point 1", "Overview point 2"],
+    "include": ["Item 1", "Item 2"],
+    "itinerary": ["Day 1: Activity 1", "Day 2: Activity 2"],
+    "equipment": ["Equipment 1", "Equipment 2"],
+    "tripMap": "https://maps.google.com/your-trip-map",
+    "video": "https://www.youtube.com/your-video",
+    "faqs": [
+      {"question": "FAQ question 1", "answer": "FAQ answer 1"},
+      {"question": "FAQ question 2", "answer": "FAQ answer 2"}
+    ]
   },
   {
     "title": "Cherry Blossoms Spring",
@@ -75,7 +125,17 @@
     "reviews": [],
 
     "photo": "/tour-images/tour-img06.jpg",
-    "featured": true
+    "featured": true,
+    "overview": ["Overview point 1", "Overview point 2"],
+    "include": ["Item 1", "Item 2"],
+    "itinerary": ["Day 1: Activity 1", "Day 2: Activity 2"],
+    "equipment": ["Equipment 1", "Equipment 2"],
+    "tripMap": "https://maps.google.com/your-trip-map",
+    "video": "https://www.youtube.com/your-video",
+    "faqs": [
+      {"question": "FAQ question 1", "answer": "FAQ answer 1"},
+      {"question": "FAQ question 2", "answer": "FAQ answer 2"}
+    ]
   },
   {
     "title": "Holmen Lofoten, France",
@@ -88,7 +148,17 @@
     "reviews": [],
 
     "photo": "/tour-images/tour-img07.jpg",
-    "featured": true
+    "featured": true,
+    "overview": ["Overview point 1", "Overview point 2"],
+    "include": ["Item 1", "Item 2"],
+    "itinerary": ["Day 1: Activity 1", "Day 2: Activity 2"],
+    "equipment": ["Equipment 1", "Equipment 2"],
+    "tripMap": "https://maps.google.com/your-trip-map",
+    "video": "https://www.youtube.com/your-video",
+    "faqs": [
+      {"question": "FAQ question 1", "answer": "FAQ answer 1"},
+      {"question": "FAQ question 2", "answer": "FAQ answer 2"}
+    ]
   },
   {
     "title": "Beautiful Snowy Mountains",
@@ -101,7 +171,17 @@
     "reviews": [],
 
     "photo": "/tour-images/tour-img03.jpg",
-    "featured": true
+    "featured": true,
+    "overview": ["Overview point 1", "Overview point 2"],
+    "include": ["Item 1", "Item 2"],
+    "itinerary": ["Day 1: Activity 1", "Day 2: Activity 2"],
+    "equipment": ["Equipment 1", "Equipment 2"],
+    "tripMap": "https://maps.google.com/your-trip-map",
+    "video": "https://www.youtube.com/your-video",
+    "faqs": [
+      {"question": "FAQ question 1", "answer": "FAQ answer 1"},
+      {"question": "FAQ question 2", "answer": "FAQ answer 2"}
+    ]
   },
   {
     "title": "Jaflong, Sylhet",
@@ -114,7 +194,17 @@
     "reviews": [],
 
     "photo": "/tour-images/tour-img08.jpg",
-    "featured": false
+    "featured": false,
+    "overview": ["Overview point 1", "Overview point 2"],
+    "include": ["Item 1", "Item 2"],
+    "itinerary": ["Day 1: Activity 1", "Day 2: Activity 2"],
+    "equipment": ["Equipment 1", "Equipment 2"],
+    "tripMap": "https://maps.google.com/your-trip-map",
+    "video": "https://www.youtube.com/your-video",
+    "faqs": [
+      {"question": "FAQ question 1", "answer": "FAQ answer 1"},
+      {"question": "FAQ question 2", "answer": "FAQ answer 2"}
+    ]
   },
   {
     "title": "Cox's Bazar Sea Beach",
@@ -127,6 +217,117 @@
     "reviews": [],
 
     "photo": "/tour-images/tour-img09.jpg",
-    "featured": false
+    "featured": false,
+    "overview": ["Overview point 1", "Overview point 2"],
+    "include": ["Item 1", "Item 2"],
+    "itinerary": ["Day 1: Activity 1", "Day 2: Activity 2"],
+    "equipment": ["Equipment 1", "Equipment 2"],
+    "tripMap": "https://maps.google.com/your-trip-map",
+    "video": "https://www.youtube.com/your-video",
+    "faqs": [
+      {"question": "FAQ question 1", "answer": "FAQ answer 1"},
+      {"question": "FAQ question 2", "answer": "FAQ answer 2"}
+    ]
+  },
+  {
+    "title": "Westminister Bridge",
+    "city": "London",
+    "address": "Somewhere in London",
+    "distance": 300,
+    "price": 919,
+    "maxGroupSize": 10,
+    "desc": "this is the description",
+    "reviews": [],
+    "photo": "/tour-images/tour-img01.jpg",
+    "featured": true,
+    "overview": [
+      "<header style=\"font-weight:5px; font-size:20px;\"> <strong> Trip highlight </strong> </header>",
+      "<ul>",
+      "<li><i class=\"ri-arrow-right-circle-fill\" style=\"color: #F2B62C;\"></i> Arrival at Tribhuvan International Airport in Kathmandu (1,400 m) and transfer to hotel. Overnight at a hotel.</li>",
+      "<li><i class=\"ri-arrow-right-circle-fill\" style=\"color: #F2B62C;\"></i> Flight to Lukla (2,840 m) from Kathmandu – 35 minutes or drive to Manthali/Ramechhap (474 m) – 5 to 6 hours and take a 20 minutes flight to Lukla, and then trek to Phakding (2,610 m) – 3 to 4 hours. Overnight at a guesthouse.</li>",
+      "<li><i class=\"ri-arrow-right-circle-fill\" style=\"color: #F2B62C;\"></i> Trek to Namche Bazaar (3,440 m) from Phakding – 5 to 6 hours. Overnight at a guesthouse.</li>",
+      "<li><i class=\"ri-arrow-right-circle-fill\" style=\"color: #F2B62C;\"></i> Acclimatization Day at Namche (3,440 m). Hike to Hotel Everest View (3,880 m) and back – 4 to 5 hours. Overnight at a guesthouse.</li>",
+      "<li><i class=\"ri-arrow-right-circle-fill\" style=\"color: #F2B62C;\"></i> Trek to Tengboche (3,860 m) from Namche Bazaar – 5 to 6 hours. Overnight at a guesthouse.</li>",
+      "<li><i class=\"ri-arrow-right-circle-fill\" style=\"color: #F2B62C;\"></i> Trek to Dingboche (4,410 m) from Tengboche – 5 to 6 hours. Overnight at a guesthouse.</li>",
+      "<li><i class=\"ri-arrow-right-circle-fill\" style=\"color: #F2B62C;\"></i> Acclimatization Day. Hike to Nangkartsang Peak (5,083 m) and back – 4 to 5 hours. Overnight at guesthouse.</li>",
+      "<li><i class=\"ri-arrow-right-circle-fill\" style=\"color: #F2B62C;\"></i> Trek to Lobuche (4,910 m) from Dingboche – 5 to 6 hours. Overnight at a guesthouse.</li>",
+      "<li><i class=\"ri-arrow-right-circle-fill\" style=\"color: #F2B62C;\"></i> Trek to Everest Base Camp (5,364 m) and then back to Gorak Shep (5,190 m) – 8 to 9 hours. Overnight at a guesthouse.</li>",
+      "<li><i class=\"ri-arrow-right-circle-fill\" style=\"color: #F2B62C;\"></i> Early morning Hike to Kala Patthar (5,555 m) and then, descend to Gorak Shep (5,190 m) – 4 to 5 hours. Shared Flight to Lukla (2,840 m) on Helicopter – 15 to 20 minutes. Overnight at a Guesthouse.</li>",
+      "<li><i class=\"ri-arrow-right-circle-fill\" style=\"color: #F2B62C;\"></i> Flight Back to Kathmandu – 35 minutes or Manthali/Ramechhap – 20 minutes from Lukla and same day drive to Kathmandu – 5 to 6 hours. Overnight at a hotel in Kathmandu.</li>",
+      "<li><i class=\"ri-arrow-right-circle-fill\" style=\"color: #F2B62C;\"></i> Transfer to the International Airport for final departure.</li>",
+      "</ul>",
+      "<header style=\"font-weight:5px; font-size:20px;\"> <strong> Short Itinerary </strong> </header>",
+      "<ul>",
+      "<li><strong>Day 01:</strong> Arrival at Tribhuvan International Airport in Kathmandu (1,400 m) and transfer to hotel. Overnight at a hotel.</li>",
+      "<li><strong>Day 02:</strong> Flight to Lukla (2,840 m) from Kathmandu – 35 minutes or drive to Manthali/Ramechhap (474 m) – 5 to 6 hours and take a 20 minutes flight to Lukla, and then trek to Phakding (2,610 m) – 3 to 4 hours. Overnight at a guesthouse.</li>",
+      "<li><strong>Day 03:</strong> Trek to Namche Bazaar (3,440 m) from Phakding – 5 to 6 hours. Overnight at a guesthouse.</li>",
+      "<li><strong>Day 04:</strong> Acclimatization Day at Namche (3,440 m). Hike to Hotel Everest View (3,880 m) and back – 4 to 5 hours. Overnight at a guesthouse.</li>",
+      "<li><strong>Day 05:</strong> Trek to Tengboche (3,860 m) from Namche Bazaar – 5 to 6 hours. Overnight at a guesthouse.</li>",
+      "<li><strong>Day 06:</strong> Trek to Dingboche (4,410 m) from Tengboche – 5 to 6 hours. Overnight at a guesthouse.</li>",
+      "<li><strong>Day 07:</strong> Acclimatization Day. Hike to Nangkartsang Peak (5,083 m) and back – 4 to 5 hours. Overnight at guesthouse.</li>",
+      "<li><strong>Day 08:</strong> Trek to Lobuche (4,910 m) from Dingboche – 5 to 6 hours. Overnight at a guesthouse.</li>",
+      "<li><strong>Day 09:</strong> Trek to Everest Base Camp (5,364 m) and then back to Gorak Shep (5,190 m) – 8 to 9 hours. Overnight at a guesthouse.</li>",
+      "<li><strong>Day 10:</strong> Early morning Hike to Kala Patthar (5,555 m) and then, descend to Gorak Shep (5,190 m) – 4 to 5 hours. Shared Flight to Lukla (2,840 m) on Helicopter – 15 to 20 minutes. Overnight at a Guesthouse.</li>",
+      "<li><strong>Day 11:</strong> Flight Back to Kathmandu – 35 minutes or Manthali/Ramechhap – 20 minutes from Lukla and same day drive to Kathmandu – 5 to 6 hours. Overnight at a hotel in Kathmandu.</li>",
+      "<li><strong>Day 12:</strong> Transfer to the International Airport for final departure.</li>",
+      "</ul>"
+    ],
+    "include": [
+      "<div style=\"background-color: green\">",
+      "<header style=\"font-weight:5px; font-size:20px; background-color: green\"> <strong> Price Includes </strong> </header>",
+      "<ul>",
+      "<li><i class=\"ri-check-double-fill\" style=\"color: #F2B62C;\"></i> All (international and domestic) airport transfers on a tourist vehicle</li>",
+      "<li><i class=\"ri-check-double-fill\" style=\"color: #F2B62C;\"></i> Twin-sharing/double accommodation in a 3-star hotel for 2 nights in Kathmandu including breakfast (Private room accommodation can be organized at an extra cost)</li>",
+      "<li><i class=\"ri-check-double-fill\" style=\"color: #F2B62C;\"></i></li>",
+      "</ul>",
+      "</div>",
+
+      "<div style=\"background-color: rgba(244, 182, 6, 0.18)\">",
+      "<header style=\"font-weight:5px; font-size:20px;\"> <strong> Price Excludes </strong> </header>",
+      "<ul>",
+      "<li><i class=\"ri-close-fill\" style=\"color: #F2B62C;\"></i> Meals (lunch and dinner) in Kathmandu</li>",
+      "<li><i class=\"ri-close-fill\" style=\"color: #F2B62C;\"></i> International flight fare and airport departure tax</li>",
+      "<li><i class=\"ri-close-fill\" style=\"color: #F2B62C;\"></i></li>",
+      "</ul> ",
+      "</div>"
+    ],
+    "itinerary": [{
+      "day": "Day 1: Arrival at Tribhuvan International Airport in Kathmandu (1,400 m) and transfer to hotel. Overnight at a hotel",
+      "description": "<ul><li>Arrival at Tribhuvan International Airport in Kathmandu (1,400 m) and transfer to hotel. Overnight at a hotel</li></ul>"
+    },
+    {
+      "day": "Day 2: Flight to Lukla (2,840 m) from Kathmandu – 35 minutes or drive to Manthali/Ramechhap (474 m) – 5 to 6 hours and take a 20 minutes flight to Lukla, and then trek to Phakding (2,610 m) – 3 to 4 hours. Overnight at a guesthouse.",
+      "description": "<ul><li>Flight to Lukla (2,840 m) from Kathmandu – 35 minutes or drive to Manthali/Ramechhap (474 m) – 5 to 6 hours and take a 20 minutes flight to Lukla, and then trek to Phakding (2,610 m) – 3 to 4 hours. Overnight at a guesthouse.</li></ul>"
+    },
+    {
+      "day": "Day 3",
+      "description": "<ul><li>Activity 3</li></ul>"
+    }],
+    "equipment": [
+      "<header style=\"font-weight:5px; font-size:20px;\"> <strong> Things to pack </strong> </header>",
+      "<p>the things need to packs descriptuinn</p>",
+      "<header style=\"font-weight:5px; font-size:20px;\"> <strong> General </strong> </header>",
+      "<ul>",
+      "<li><i class=\"ri-arrow-right-circle-fill\" style=\"color: #F2B62C;\"></i> </li>",
+
+      "<li><FaStickerMule />Equipment 1</li>",
+      "<li>Equipment 2</li>",
+      "</ul>"
+    ],
+    "tripMap": "https://maps.google.com/your-trip-map",
+    "video": "https://www.youtube.com/your-video",
+    "faqs": [
+      {
+        "question": "FAQ question 1", 
+        "answer": "FAQ answer 1"
+      },
+      {
+        "question": "FAQ question 2", 
+        "answer": "FAQ answer 2"
+      }
+    ]
   }
+  
+  
+  
 ]
