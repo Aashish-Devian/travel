@@ -23,7 +23,7 @@
   .itinerary-item div {
     padding: 10px;
     border: 1px solid #ddd;
-    border-top: 1px solid #ff9933;
+    border-top: 1px solid #ddd;
   }
 
 .hidden-nav {

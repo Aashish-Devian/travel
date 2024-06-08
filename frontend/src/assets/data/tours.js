@@ -43,8 +43,14 @@ const tours = [
     tripMap: "https://maps.google.com/your-trip-map",
     video: "https://www.youtube.com/your-video",
     faqs: [
-      {question: "FAQ question 1", answer: "FAQ answer 1"},
-      {question: "FAQ question 2", answer: "FAQ answer 2"}
+      {
+        question: "FAQ question 1", 
+        answer: "FAQ answer 1"
+      },
+      {
+        question: "FAQ question 2", 
+        answer: "FAQ answer 2"
+      }
     ]
   },
   {

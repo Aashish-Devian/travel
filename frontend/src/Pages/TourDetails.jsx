@@ -94,13 +94,11 @@ const TourDetails = () => {
   }, [tour]);
 
   const toggleDay = (index) => {
-    setExpandedDays((prevExpandedDays) => {
-      if (prevExpandedDays.includes(index)) {
-        return [];
-      } else {
-        return [index];
-      }
-    });
+    setExpandedDays((prevExpandedDays) =>
+      prevExpandedDays.includes(index)
+        ? prevExpandedDays.filter((dayIndex) => dayIndex !== index)
+        : [...prevExpandedDays, index]
+    );
   };
 
   const toggleAllDays = () => {
@@ -314,33 +312,33 @@ const TourDetails = () => {
                       ))}
                     </ul>
 
-                    <div className="d-flex justify-content-between align-items-center">
-                      <h5 id="itinerary" className="scroll-offset">Itinerary</h5>
-                      <div>
-                        <Button
-                          className="itinerary-toggle-button btn primary__btn text-white"
-                          onClick={toggleAllDays}
-                        >
-                          {allDaysExpanded ? "Close All" : "Open All"}
-                        </Button>
-                      </div>
-                    </div>
-                    <div className="itinerary-content">
-                      {itinerary?.map((item, index) => (
-                        <div key={index} className="itinerary-item">
-                          <header onClick={() => toggleDay(index)}>
-                            {item.day}
-                          </header>
-                          {expandedDays.includes(index) && (
-                            <div
-                              dangerouslySetInnerHTML={{
-                                __html: item.description,
-                              }}
-                            ></div>
-                          )}
-                        </div>
-                      ))}
-                    </div>
+                    <div>
+      <div className="d-flex justify-content-between align-items-center">
+        <h5 id="itinerary" className="scroll-offset">Itinerary</h5>
+        <div>
+          <Button
+            className="itinerary-toggle-button btn primary__btn text-white"
+            onClick={toggleAllDays}
+          >
+            {allDaysExpanded ? "Close All" : "Open All"}
+          </Button>
+        </div>
+      </div>
+      <div className="itinerary-content">
+        {itinerary?.map((item, index) => (
+          <div key={index} className="itinerary-item">
+            <header onClick={() => toggleDay(index)} dangerouslySetInnerHTML={{ __html: item.day }} />
+            {expandedDays.includes(index) && (
+              <div
+                dangerouslySetInnerHTML={{
+                  __html: item.description,
+                }}
+              ></div>
+            )}
+          </div>
+        ))}
+      </div>
+    </div>
 
                     <h5 id="equipment" className="scroll-offset">Equipment</h5>
                     <ul>
