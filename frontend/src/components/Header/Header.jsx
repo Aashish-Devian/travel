@@ -142,6 +142,7 @@ const Header = () => {
 
   const handleDropdownToggle = (index) => {
     setActiveDropdown(activeDropdown === index ? null : index);
+    setActiveNestedDropdown(null); // Close nested dropdowns when toggling main dropdown
   };
 
   const handleNestedDropdownToggle = (index) => {
@@ -150,6 +151,8 @@ const Header = () => {
 
   const handleClickOutside = (event) => {
     if (menuRef.current && !menuRef.current.contains(event.target)) {
+      setActiveDropdown(null);
+      setActiveNestedDropdown(null);
       menuRef.current.classList.remove('show__menu');
     }
   };
@@ -161,6 +164,8 @@ const Header = () => {
 
   useEffect(() => {
     menuRef.current.classList.remove('show__menu');
+    setActiveDropdown(null);
+    setActiveNestedDropdown(null);
   }, [location]);
 
   return (
@@ -170,7 +175,7 @@ const Header = () => {
           <div className="nav__wrapper d-flex align-items-center justify-content-between">
             <Link to="/">
               <div className="logo">
-                <img src={logo} alt="" />
+                <img src={logo} alt="Logo" />
               </div>
             </Link>
 
