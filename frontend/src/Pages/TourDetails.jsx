@@ -94,11 +94,13 @@ const TourDetails = () => {
   }, [tour]);
 
   const toggleDay = (index) => {
-    setExpandedDays((prevExpandedDays) =>
-      prevExpandedDays.includes(index)
-        ? prevExpandedDays.filter((dayIndex) => dayIndex !== index)
-        : [...prevExpandedDays, index]
-    );
+    setExpandedDays(prevExpandedDays => {
+      if (prevExpandedDays.includes(index)) {
+        return [];
+      } else {
+        return [index];
+      }
+    });
   };
 
   const toggleAllDays = () => {
