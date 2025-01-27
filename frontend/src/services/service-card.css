@@ -7,9 +7,9 @@
 
 .service__item {
     padding: 1rem;
-    border-bottom: 1px solid #faa83586;
-    border-right: 1px solid #faa83586;
-    border-radius: 0.5rem; /* Correct typo */
+    border-bottom: 1.5px solid var(--secondary-color);
+    border-right: 1.5px solid var(--secondary-color);
+    border-radius: 1rem; /* Correct typo */
     margin-right: 1rem; /* Add spacing between items */
 }
 

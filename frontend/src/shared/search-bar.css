@@ -39,6 +39,14 @@
     cursor: pointer;
 }
 
+.search__icon {
+    padding: 0.5rem;
+    border-bottom: 1px solid var(--secondary-color);
+    border-right: 1px solid var(--secondary-color);
+    border-radius: 0.5rem; /* Correct typo */
+    //margin-right: 0.5rem; /* Add spacing between items */
+}
+
 
 @media only screen and (max-width:992px) {
     .search__bar{

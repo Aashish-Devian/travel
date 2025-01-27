@@ -6,22 +6,22 @@ import { BASE_URL } from "../utils/config";
 import { useNavigate } from "react-router-dom";
 
 const SearchBar = () => {
-  const locationRef = useRef("");
-  const distanceRef = useRef(0);
-  const maxGroupSizeRef = useRef(0);
+  const DestinationRef = useRef("");
+  const ActivityRef = useRef(0);
+  const DurationRef = useRef(0);
   const navigate = useNavigate();
 
   const searchHandler = async () => {
-    const location = locationRef.current.value;
-    const distance = distanceRef.current.value;
-    const maxGroupSize = maxGroupSizeRef.current.value;
+    const Destination = DestinationRef.current.value;
+    const Activity = ActivityRef.current.value;
+    const Duration = DurationRef.current.value;
 
-    if (location === "" || distance === "" || maxGroupSize === "") {
+    if (Destination === "" || Activity === "" || Duration === "") {
       return alert("All fields are required!");
     }
 
     const res = await fetch(
-      `${BASE_URL}/tours/search/getTourBySearch?city=${location}&distance=${distance}&maxGroupSize=${maxGroupSize}`
+      `${BASE_URL}/tours/search/getTourBySearch?city=${Destination}&distance=${Activity}&maxGroupSize=${Duration}`
     );
 
     if (!res.ok) alert("Something went wrong");
@@ -29,7 +29,7 @@ const SearchBar = () => {
     const result = await res.json();
 
     navigate(
-      `/tours/search?city=${location}&distance=${distance}&maxGroupSize=${maxGroupSize}`,
+      `/tours/search?city=${Destination}&distance=${Activity}&maxGroupSize=${Duration}`,
       { state: result.data }
     );
   };
@@ -42,26 +42,26 @@ const SearchBar = () => {
                     <i class="ri-map-pin-line"></i> 
                 </span>
                 <div>
-                    <h6>Location</h6>
-                    <input type="text" placeholder='Where are you going?' ref={locationRef} />
+                    <h6>Destination</h6>
+                    <input type="text" placeholder='Where are you going?' ref={DestinationRef} />
                 </div>
             </FormGroup>
             <FormGroup className="d-flex gap-3 form__group form__group-fast">
                 <span> 
-                    <i class="ri-map-pin-time-line"></i> 
+                  <i class="ri-mental-health-line"></i> 
                 </span>
                 <div>
-                    <h6>Distance</h6>
-                    <input type="number" placeholder='Distance K/m' ref={distanceRef} />
+                    <h6>Activity</h6>
+                    <input type="text" placeholder='What you want to do?' ref={ActivityRef} />
                 </div>
             </FormGroup>
             <FormGroup className="d-flex gap-3 form__group form__group-last">
                 <span> 
-                    <i class="ri-group-line"></i> 
+                  <i class="ri-map-pin-time-line"></i>  
                 </span>
                 <div>
-                    <h6>Max People</h6>
-                    <input type="number" placeholder='0' ref={maxGroupSizeRef} />
+                    <h6>Duration</h6>
+                    <input type="text" placeholder='Days you spend!' ref={DurationRef} />
                 </div>
             </FormGroup>
 

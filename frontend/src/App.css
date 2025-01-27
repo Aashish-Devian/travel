@@ -5,11 +5,30 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
+/* :root {
   --primary-color: #ff7e01;
   --secondary-color: #faa935;
   --heading-color: #0b2727;
   --text-color: #6e7074;
+  --font-name: "Montserrat", sans-serif;
+  --subtitle-font-name: "Island Moments", cursive;
+} */
+ 
+/* :root {
+  --primary-color: #c0c0c0; 
+  --secondary-color: #d3d3d3; 
+  --heading-color: #800080; 
+  --text-color: #000000; 
+  --font-name: "Montserrat", sans-serif;
+  --subtitle-font-name: "Island Moments", cursive;
+} */
+
+
+:root {
+  --primary-color: #0077cc; 
+  --secondary-color: #00bfae; 
+  --heading-color: #0b2727; 
+  --text-color: #333333; 
   --font-name: "Montserrat", sans-serif;
   --subtitle-font-name: "Island Moments", cursive;
 }

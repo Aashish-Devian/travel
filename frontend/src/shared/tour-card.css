@@ -26,6 +26,14 @@
     border-radius: 3px 0 0 0;
 }
 
+.tour__card {
+    padding: 0.5rem;
+    border-bottom: 2px solid var(--secondary-color);
+    border-right: 2px solid var(--secondary-color);
+    border-radius: 1rem; /* Correct typo */
+    margin-right: 1rem; /* Add spacing between items */
+}
+
 .card__top span i {
     color: var(--secondary-color);
 }
@@ -62,7 +70,8 @@
 }
 
 .card__bottom h5{
-    color: var(--secondary-color);
+    /* color: var(--secondary-color); */
+    color: red;
     font-size: 1.1rem;
     font-weight: 700;
 }
