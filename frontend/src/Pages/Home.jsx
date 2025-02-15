@@ -80,8 +80,12 @@ const Home = () => {
       <Col lg='12' className="mb-5">
         <Subtitle subtitle={'Explore'} />
         <h2 className="featured__tour-title">Our Feature Tours</h2>
+
       </Col>
       <FeaturedTourList />
+      {/* <div className="read-more-button-container">
+          <a href="/tours" className="read-more-button">Read More</a>
+        </div> */}
     </Row>
     </Container>
   </section>

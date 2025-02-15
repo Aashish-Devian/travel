@@ -1,7 +1,7 @@
 import React from "react";
 import TourCard from "../../shared/TourCard";
 // import tourData from '../../assets/data/tours'
-import { Col } from "reactstrap";
+import { Col, Row } from "reactstrap";
 import useFetch from "./../../hooks/useFetch";
 import { BASE_URL } from "./../../utils/config";
 
@@ -15,17 +15,19 @@ const FeaturedTourList = () => {
 
   return (
     <>
+    {/* <Row> */}
       {loading && <h4>Loading.....</h4>}
       {error && <h4>{error}</h4>}
-      {!loading &&
-        !error &&
+      {!loading && 
+        !error && 
         featuredTours?.map((tour) => (
           <Col lg="3" md="6" sm="6" className="mb-4" key={tour._id}>
             <TourCard tour={tour} />
           </Col>
         ))}
+        {/* </Row> */}
     </>
-  );
-};
+  )
+}
 
-export default FeaturedTourList;
+export default FeaturedTourList
